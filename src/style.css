@@ -1,0 +1,20 @@
+@import "tailwindcss";
+ html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+ }
+
+ body {
+    font-family: var(--font-primary);
+    /* color: var(--neutral-800); */
+    background-color: #ffffff;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
