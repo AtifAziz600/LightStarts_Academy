@@ -28,7 +28,7 @@
       <div class="flex items-center gap-3">
         <!-- Login Button -->
         <button
-          class="bg-transparent text-neutral-100 border-2 border-neutral-300 font-bold px-7 py-2 rounded-2xl transition-all duration-300 hover:text-blue-400 hover:bg-neutral-100 hover:border-neutral-300 hover:-translate-y-0.5"
+          class="hidden md:block bg-transparent text-neutral-100 border-2 border-neutral-300 font-bold px-7 py-2 rounded-2xl transition-all duration-300 hover:text-blue-400 hover:bg-neutral-100 hover:border-neutral-300 hover:-translate-y-0.5"
           :class="isScrolled ? 'text-neutral-700' : 'text-neutral-50'"
 
         >
@@ -53,7 +53,7 @@
      <aside
       v-if="isMenuOpen"
       id="mobile-menu"
-      class="md:hidden shadow-lg py-4 px-4 absolute top-full left-0 right-0 z-40"
+      class="md:hidden shadow-lg py-4 px-3 absolute top-full left-0 right-0 z-[800]"
       style="background: rgba(0, 0, 0, 0.7)"
       aria-label="Mobile menu"
     >
@@ -67,6 +67,13 @@
       {{ link.label }}
     </a>
   </li>
+  <button
+          class="bg-transparent text-neutral-100 border-2 border-neutral-300 font-bold px-20 py-2 rounded-2xl transition-all duration-300 hover:text-blue-400 hover:bg-neutral-100 hover:border-neutral-300 hover:-translate-y-0.5"
+          :class="isScrolled ? 'text-neutral-700' : 'text-neutral-50'"
+
+        >
+          Login
+        </button>
 </ul>
 
     </aside>
